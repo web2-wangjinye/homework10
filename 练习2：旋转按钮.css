@@ -1,0 +1,29 @@
+*{
+margin:0px;
+padding:0px;
+}
+.clearfix{
+*zoom:1;
+}
+.clearfix:after{
+display:table;
+clear:both;
+content:"";
+}
+.fl{
+float:left;
+}
+.all{
+width:500px;
+margin:20px 20px;
+}
+ul li{
+list-style:none;
+}
+img{
+margin:10px 15px;
+}
+a:hover img{
+transform:rotate(360deg) scale(1.2);
+transition-duration:1s;
+}

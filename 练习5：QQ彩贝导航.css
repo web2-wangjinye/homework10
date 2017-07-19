@@ -1,0 +1,101 @@
+*{
+margin:0px;
+padding:0px;
+}
+.clearfix{
+*zoom:1;
+}
+.clearfix:after{
+display:table;
+clear:both;
+content:"";
+}
+.fl{
+float:left;
+}
+.fr{
+float:right;
+}
+.all{
+width:100%;
+background:linear-gradient(to bottom,white,#f8f8f8,#ebebeb);
+}
+.box{
+width:1200px;
+margin:20px auto;
+ background:linear-gradient(to bottom,#ffffff,#f8f8f8,#ebebeb);
+}
+ul{
+/*border:1px solid red;*/
+margin-left:48px;
+}
+li{
+list-style:none;
+display:inline-block;
+line-height:46px;
+vertical-align:center;
+height:46px;
+padding:0px 0px;
+margin-left:20px;
+}
+a,li{
+color:#666;
+font-size:18px;
+text-decoration:none;
+}
+li a img{
+position:relative;
+top:6px;
+}
+.menu1{
+position:relative;
+}
+.a1{
+	position: absolute;
+	top:-8px;
+	z-index:2;
+	width: 38px;
+	height: 23px;
+	background: url("header_03.png")  no-repeat;
+	}
+			
+			
+.a2{
+	position: absolute;
+	top:-10px;
+	z-index:2;
+	width: 38px;
+	height: 23px;
+	background: url("header_07.png")  no-repeat;
+	/*border:1px solid red;*/
+}
+
+.menu1{
+position:relative;
+}
+.menu3{
+position:relative;
+/*border:1px solid red;*/
+}
+.menu1 li a:hover .a1{
+animation: spread 0.4s linear both;
+background: url("header_05.png")  no-repeat;
+}
+			
+.menu3 li a:hover .a2{
+animation: spread 0.4s linear both;
+background: url("header_09.png")  no-repeat;
+}			
+.iconsB a:hover img{
+transform:rotate(360deg) scale(1.2);
+transition-duration:1s;
+}
+@keyframes spread {  
+ 0% {width:0;}  
+ 33% {width:20px;}   
+66% {width:43px;}   
+100% {width:66px;} 
+}
+a:hover{
+color:red;
+}
